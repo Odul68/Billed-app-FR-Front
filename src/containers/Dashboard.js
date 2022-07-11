@@ -131,6 +131,24 @@ export default class {
   }
 
   handleShowTickets(e, bills, index) {
+
+
+// ++++++++++++++++++++++++++++++ TO DOUBLE CHECK +++++++++++++++++++++++++++++++++++++++++++
+
+
+
+    bills.forEach((bill) => {
+      console.log(bill);
+
+      $(`#open-bill${bill.id}`).off("click");
+    });
+
+
+
+// ++++++++++++++++++++++++++++++ TO DOUBLE CHECK +++++++++++++++++++++++++++++++++++++++++++
+
+
+
     if (this.counter === undefined || this.index !== index) this.counter = 0
     if (this.index === undefined || this.index !== index) this.index = index
     if (this.counter % 2 === 0) {
